@@ -105,7 +105,7 @@ async def main():
         delay = random.randint(1000, 8000)
         await delay_time(delay)
 
-    message += f'所有{serviceName}账号登录完成！'
+    message += f'所有{serviceName}账号登录完成！\n账号总数:{len(accounts)}'
     # await send_telegram_message(message)
     await send_feishu_message(message)
     print(f'所有{serviceName}账号登录完成！')
